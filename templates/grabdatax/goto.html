@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>goto page</title>
+</head>
+<body>
+
+    <li><a href=" {% url 'grabdatax:index' %}">Main page! WITH NAMESPACES</a></li>
+    <li><a href="/grabdatax/">Main page! ABS PATH</a></li>
+
+    form will be here!
+
+    <form action="{% url 'grabdatax:list' %}" method="post">
+        <input type="submit" value="go!" /></p>
+    </form>
+</body>
+</html>
